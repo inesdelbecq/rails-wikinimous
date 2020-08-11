@@ -1,0 +1,8 @@
+<div class="container">
+  <ul class = "list-index">
+    <% @articles.each do |article| %>
+    <li id="title"><%= link_to article.title,  article_path(article) %></li>
+    <li id="subtitle"><%=  article.content  %></li>
+    <% end %>
+  </ul>
+</div>

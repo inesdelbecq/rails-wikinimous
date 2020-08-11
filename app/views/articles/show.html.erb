@@ -1,0 +1,9 @@
+<div class="page-show">
+  <h1> <%= @article.title %>
+    <%= link_to "", "#{@article.id}/edit", :class => "fas fa-pencil-alt"%>
+    <%= link_to "", article_path(@article), :class => "far fa-trash-alt", method: :delete, data: { confirm: "Are you sure?" }  %>
+  </h1>
+  <%= @article.content %>
+</div>
+
+
